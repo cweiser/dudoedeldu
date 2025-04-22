@@ -1,0 +1,1 @@
+{"ast":null,"code":"/* eslint-env browser */\n\nexport const subtle = crypto.subtle;\nexport const getRandomValues = crypto.getRandomValues.bind(crypto);","map":null,"metadata":{},"sourceType":"module","externalDependencies":[]}

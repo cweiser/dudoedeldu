@@ -1,0 +1,1 @@
+{"ast":null,"code":"/**\n * Utility module to work with EcmaScript Symbols.\n *\n * @module symbol\n */\n\n/**\n * Return fresh symbol.\n *\n * @return {Symbol}\n */\nexport const create = Symbol;\n\n/**\n * @param {any} s\n * @return {boolean}\n */\nexport const isSymbol = s => typeof s === 'symbol';","map":null,"metadata":{},"sourceType":"module","externalDependencies":[]}

@@ -1,0 +1,21 @@
+<div class="p-4 max-w-xl mx-auto">
+  <h1 class="text-2xl font-bold mb-4">🧠 Shared Notes (P2P via Yjs)</h1>
+
+  <div class="mb-4">
+    <label class="block text-sm font-medium mb-1">Raumname:</label>
+    <input [(ngModel)]="roomName" (change)="reconnectToRoom()" class="p-2 border rounded w-full" />
+  </div>
+
+  <div class="mb-4">
+    <canvas #qrCanvas></canvas>
+    <p class="text-sm text-gray-600 mt-1">Scanne den QR-Code oder teile den Link, um beizutreten.</p>
+  </div>
+
+  <textarea
+    [(ngModel)]="sharedTextContent"
+    (input)="updateSharedText()"
+    rows="10"
+    class="w-full p-2 border rounded shadow"
+    placeholder="Schreibe etwas und teile es mit anderen..."
+  ></textarea>
+</div>
